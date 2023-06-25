@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Orbit&family=Pacifico&family=Rubik:wght@500&display=swap');
+
+body {
+    background-color: #100e0edf;
+    background-image: url("./3d-background-spotify-icon_318923-140.avif");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.sad img {
+    width: 55px;
+    padding: 0 8px;
+}
+
+.sad {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.containers {
+    min-height: 100vh;
+    background-color: #100e0edf;
+    
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content towards the left */
+    padding: 34px;
+}
+
+
+#fav{
+    color: white;
+}
+
+.songlists {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.songitems {
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.songitems img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    margin-right: 12px;
+    border-radius: 4px;
+}
+
+.songdetails {
+    flex-grow: 1;
+}
+
+.songtitles {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.songdurations {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.bottoms {
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.icon {
+    margin-top: 14px;
+}
+
+.icon i {
+    cursor: pointer;
+}
+
+#myProgress {
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.songinfos {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.songinfos img {
+    width: 42px;
+    margin-right: 8px;
+}
+
+/* Additional Styles */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.songitems i {
+    color: #1db954;
+    margin-left: 12px;
+    cursor: pointer; /* Add cursor pointer */
+}
+.songinfos
+{
+    position: relative;
+    left: 0;
+}
+.songinfos img
+{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
